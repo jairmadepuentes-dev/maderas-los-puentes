@@ -9,14 +9,14 @@
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
-  color: rgb(233, 226, 226);
+  color: rgb(0, 0, 0);
 }
 
 /* Cabecera y menú */
 
 header {
-  background: linear-gradient(to right, #925403a6, #4ca1af);
-  color: white;
+  background: linear-gradient(to right, #3b2501, #b35503);
+  color: rgb(27, 26, 26);
   padding: 20px 10px;
   text-align: center;
 }
@@ -55,7 +55,7 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #222; /* Oscurece el texto al hacer hover */
-  background: #7eff05; /* Resalta el fondo */
+  background: #050505; /* Resalta el fondo */
   border-radius: 5px;
 }
 
@@ -72,7 +72,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #7eff05;
+  color: #fafdfd;
   padding: 5px 10px;
 }
 
@@ -108,7 +108,7 @@ nav ul li a:hover {
   align-items: center;
   text-align: center;
   padding: 50px 20px;
-  background: url('../images/hero-bg2.jpg') no-repeat center center/cover;
+  background: url('/assets/images/hero-bg2') no-repeat center center/cover;
   color: #fff;
 }
 
@@ -173,7 +173,7 @@ footer {
   justify-content: center;
   text-align: center;
   
-  background: url('tu-imagen.jpg') no-repeat center center;
+  background: url('/assets/images/hero-bg2') no-repeat center center;
   background-size: cover;
   
   /* Filtro para difuminar la imagen */
@@ -192,7 +192,7 @@ footer {
 }
 h1 {
   font-size: 2rem;
-  color: white;
+  color: rgb(0, 0, 0);
   position: relative;
   z-index: 1;
 }
