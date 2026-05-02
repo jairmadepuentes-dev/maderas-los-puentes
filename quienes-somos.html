@@ -1,46 +1,64 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CO">
 <head>
-  <meta charset="UTF-8">
-  <title>Quiénes Somos | Maderas Los Puentes</title>
-  <link rel="icon" href="assets/images/logo.png">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Lora', serif;
-      background: #fbf7ef;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
-    }
-    .container {
-      max-width: 700px;
-    }
-    h1 {
-      font-size: 3rem;
-      color: #5f4112;
-    }
-    p {
-      font-size: 1.2rem;
-      color: #666;
-    }
-    .btn {
-      margin-top: 20px;
-      padding: 12px 20px;
-      background: #d69736;
-      text-decoration: none;
-      color: black;
-      font-weight: bold;
-    }
-  </style>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiénes Somos | Maderas Los Puentes</title>
+<meta name="description" content="Historia familiar de Maderas Los Puentes: tradición, calidad, corte de madera, asesoría y servicio cercano en Bogotá.">
+<link rel="icon" href="assets/images/logo.png">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Yellowtail&display=swap');
+:root{--madera:#9e6c20;--madera-oscura:#5f4112;--dorado:#d69736;--crema:#fbf7ef;--arena:#efe2cd;--verde:#556b2f;--texto:#1b1b1b;--gris:#66615a;--blanco:#fff;--sombra:0 18px 45px rgba(53,32,8,.12)}*{box-sizing:border-box}body{margin:0;font-family:'Lora',Georgia,serif;color:var(--texto);background:var(--crema);line-height:1.65}a{text-decoration:none;color:inherit}.topbar{background:#1f160b;color:#fff;font-size:.9rem;padding:8px 5%;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.navbar{background:rgba(255,255,255,.96);position:sticky;top:0;z-index:50;box-shadow:0 6px 18px rgba(0,0,0,.07);padding:16px 5%;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:14px;min-width:230px}.brand img{width:78px;height:78px;object-fit:contain}.brand-name{font-family:'Yellowtail',cursive;color:var(--madera);font-size:clamp(1.75rem,3vw,2.5rem);line-height:1}.nav-links{display:flex;align-items:center;justify-content:flex-end;gap:22px;flex-wrap:wrap;text-transform:uppercase;letter-spacing:.16em;font-size:.78rem;font-weight:700}.nav-links a{color:var(--madera-oscura);border-bottom:2px solid transparent;padding-bottom:6px;transition:.2s}.nav-links a:hover,.nav-links .active{color:var(--madera);border-bottom-color:var(--dorado)}.hero{min-height:430px;padding:86px 5% 72px;background:linear-gradient(115deg,rgba(24,17,8,.88),rgba(72,42,12,.55)),var(--hero-img);background-size:cover;background-position:center;color:#fff;display:grid;place-items:center;text-align:center;position:relative;overflow:hidden}.hero:after{content:'Madera';position:absolute;right:-60px;bottom:-30px;font-family:'Yellowtail',cursive;font-size:clamp(6rem,18vw,16rem);color:rgba(214,151,54,.13);transform:rotate(-10deg);pointer-events:none}.hero-content{max-width:920px;position:relative;z-index:1}.eyebrow{color:var(--dorado);text-transform:uppercase;letter-spacing:.22em;font-weight:700;font-size:.83rem;margin-bottom:12px}h1{margin:0;font-size:clamp(2.5rem,6vw,5rem);line-height:1.05;text-shadow:0 2px 30px rgba(0,0,0,.3)}.hero p{max-width:760px;margin:22px auto 0;font-size:clamp(1rem,2vw,1.22rem)}.section{padding:70px 5%}.section-header{max-width:900px;margin:0 auto 38px;text-align:center}.section-header h2{margin:0;color:var(--madera-oscura);font-size:clamp(2rem,4vw,3.2rem);line-height:1.15}.section-header p{color:var(--gris);margin:14px auto 0;max-width:760px}.grid{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}.card{background:var(--blanco);border:1px solid rgba(158,108,32,.15);border-radius:22px;overflow:hidden;box-shadow:var(--sombra);transition:.22s}.card:hover{transform:translateY(-4px);box-shadow:0 24px 55px rgba(53,32,8,.18)}.card-body{padding:24px}.card h3,.card h4{margin:0 0 10px;color:var(--madera-oscura);font-size:1.25rem;line-height:1.3}.card p,.card li{color:var(--gris)}.image-card{min-height:270px;background-size:cover;background-position:center;display:flex;align-items:flex-end}.image-card .caption{width:100%;background:linear-gradient(0deg,rgba(31,22,11,.88),rgba(31,22,11,.22));color:#fff;padding:22px}.caption h3{color:#fff}.timeline{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{background:#fff;border-left:5px solid var(--dorado);border-radius:16px;padding:22px;box-shadow:var(--sombra)}.quote{font-size:1.12rem;font-style:italic;color:#3a2415;border-left:4px solid var(--dorado);padding-left:18px}.notice{max-width:1180px;margin:0 auto 34px;background:#fff;border-left:5px solid var(--dorado);border-radius:16px;padding:18px 20px;box-shadow:var(--sombra);color:var(--gris)}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 18px;border-bottom:4px solid rgba(95,65,18,.65);background:var(--dorado);color:#111;font-weight:700;font-size:.9rem;transition:.2s;text-align:center}.btn:hover{background:#f9b040}.btn.whatsapp{background:#25D366;color:#fff;border-bottom-color:#128c3d}.cta{margin-top:70px;background:linear-gradient(120deg,#1f160b,#5f4112);color:#fff;border-radius:28px;max-width:1180px;margin-left:auto;margin-right:auto;padding:42px;display:grid;grid-template-columns:1.5fr .7fr;gap:28px;align-items:center;box-shadow:var(--sombra)}.cta h3{margin:0 0 10px;font-size:clamp(1.6rem,3vw,2.5rem)}.cta p{margin:0;color:rgba(255,255,255,.82)}.form{background:#fff;border-radius:22px;padding:28px;box-shadow:var(--sombra)}label{font-weight:700;color:var(--madera-oscura)}input,textarea,select{width:100%;margin:6px 0 16px;padding:13px 14px;border:1px solid rgba(158,108,32,.25);border-radius:12px;font:inherit;background:#fff}textarea{min-height:130px;resize:vertical}.map{width:100%;height:360px;border:0;border-radius:22px;box-shadow:var(--sombra)}footer{padding:42px 5%;background:#161616;color:#dbdbdb;text-align:center}.footer-brand{font-family:'Yellowtail',cursive;color:var(--dorado);font-size:2rem;margin-bottom:8px}.whatsapp-float{position:fixed;right:22px;bottom:22px;width:60px;height:60px;border-radius:50%;background:#25D366;color:#fff;display:grid;place-items:center;font-size:1.6rem;font-weight:700;box-shadow:0 16px 40px rgba(0,0,0,.25);z-index:80}@media(max-width:980px){.grid,.grid.two,.timeline{grid-template-columns:1fr 1fr}.cta{grid-template-columns:1fr}.navbar{align-items:flex-start;flex-direction:column}.nav-links{justify-content:flex-start}}@media(max-width:620px){.topbar{font-size:.78rem}.brand img{width:62px;height:62px}.grid,.grid.two,.timeline{grid-template-columns:1fr}.hero{min-height:380px;padding-top:64px}.section{padding:52px 5%}.cta{padding:28px;border-radius:20px}.whatsapp-float{width:54px;height:54px;right:16px;bottom:16px}}
+</style>
 </head>
-<body>
-  <div class="container">
-    <h1>🚧 UNDER CONSTRUCTION 🚧</h1>
-    <p>Estamos construyendo nuestra historia y experiencia para ti.</p>
-    <a href="index.html" class="btn">Volver al inicio</a>
+<body style="--hero-img:url('assets/images/historia.jpg')">
+<div class="topbar">
+  <span>Cra 55 #127d-35 · Bogotá, Colombia</span>
+  <span>WhatsApp: 310 806 8408 · 311 878 6081 · Tel: 601 926 1509</span>
+</div>
+<header class="navbar">
+  <a class="brand" href="index.html" aria-label="Inicio Maderas Los Puentes">
+    <img src="assets/images/logo.png" alt="Logo Maderas Los Puentes">
+    <span class="brand-name">Maderas los puentes</span>
+  </a>
+  <nav class="nav-links" aria-label="Navegación principal">
+    <a href="index.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+    <a class="active" href="quienes-somos.html">Quiénes somos</a>
+    <a href="galeria.html">Galería</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="https://wa.me/573108068408?text=Hola%2C%20quiero%20cotizar%20madera%20para%20mi%20proyecto">WhatsApp</a>
+  </nav>
+</header>
+<main>
+<section class="hero"><div class="hero-content"><div class="eyebrow">Tradición familiar</div><h1>Una historia tallada con esfuerzo</h1><p>Más que vender madera, acompañamos proyectos. Maderas Los Puentes une experiencia, trato cercano y una visión moderna para entregar soluciones confiables a constructores, carpinteros, maestros de obra y familias.</p></div></section>
+<section class="section">
+  <div class="section-header"><div class="eyebrow">Quiénes somos</div><h2>De un taller familiar a una maderera con vocación de servicio</h2><p>Maderas Los Puentes nació como un negocio familiar construido con trabajo, palabra y constancia. La historia de Omar Téllez representa el origen: esfuerzo diario, atención honesta y respeto por cada cliente. Hoy, Jair Téllez continúa ese legado con una mirada más moderna, fortaleciendo la organización, la presencia digital y la asesoría para proyectos reales.</p></div>
+  <div class="grid two">
+    <article class="card"><div class="image-card" style="background-image:url('assets/images/equipo.jpg')"><div class="caption"><h3>Tradición que genera confianza</h3><p>Atención cercana, experiencia en obra y conocimiento práctico de la madera.</p></div></div></article>
+    <article class="card"><div class="card-body"><h3>Calidad y precisión en madera</h3><p>Nos especializamos en la venta de madera fina y ordinaria, listones para techo, cortes de sinfín, tablas, chapas, forros, repisas, planchones, durmientes, guadua, triplex, boceles y formaleta.</p><p>La recomendación para nuestros clientes es clara: elegir la madera según uso, medida, resistencia, disponibilidad y transporte. Por eso cotizamos de forma personalizada y no solamente por lista de precios.</p></div></article>
   </div>
+</section>
+<section class="section" style="background:#fff">
+  <div class="section-header"><div class="eyebrow">Legado familiar</div><h2>Antes y ahora</h2><p>La ventaja competitiva de Maderas Los Puentes está en combinar experiencia local, asesoría y una experiencia digital clara, algo que muchas empresas tradicionales del sector todavía no ofrecen.</p></div>
+  <div class="timeline">
+    <div class="step"><h3>Origen</h3><p>Omar Téllez empezó desde abajo, con un pequeño taller, una camioneta y la disciplina de cumplirle al cliente.</p></div>
+    <div class="step"><h3>Crecimiento</h3><p>La calidad del producto, el cumplimiento y la atención familiar permitieron convertir el negocio en una referencia local.</p></div>
+    <div class="step"><h3>Actualidad</h3><p>Jair Téllez impulsa una etapa más moderna: catálogo digital, mejores procesos de inventario, fotos reales, asesoría y enfoque responsable.</p></div>
+  </div>
+</section>
+<section class="section">
+  <div class="grid two">
+    <article class="card"><div class="card-body"><h3>La voz de Omar</h3><p class="quote">“La madera se trabaja con paciencia, pero al cliente se le responde con seriedad. La palabra vale tanto como el producto.”</p></div></article>
+    <article class="card"><div class="card-body"><h3>La visión de Jair</h3><p class="quote">“Queremos conservar la tradición familiar, pero vender mejor: con información clara, asesoría, presencia digital y productos adecuados para cada obra.”</p></div></article>
+  </div>
+  <div class="cta"><div><h3>Construye con confianza, construye con Los Puentes.</h3><p>Cuéntanos qué necesitas y te orientamos con medidas, usos, disponibilidad, corte y despacho.</p></div><a class="btn" href="productos.html">Ver productos</a></div>
+</section>
+</main>
+<footer>
+  <div class="footer-brand">Maderas los puentes</div>
+  <div>Venta de madera fina y ordinaria para construcción, carpintería y acabados.</div>
+  <div>Cra 55 #127d-35 · Bogotá, Colombia · m2puentes@gmail.com</div>
+</footer>
+<a class="whatsapp-float" aria-label="Cotizar por WhatsApp" href="https://wa.me/573108068408?text=Hola%2C%20quiero%20cotizar%20madera">W</a>
 </body>
 </html>
