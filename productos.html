@@ -13,6 +13,7 @@
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="icon" href="assets/images/logo.png" />
   <style>
+
     @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Yellowtail&display=swap');
 
     :root {
@@ -446,6 +447,43 @@
       .cta { padding: 28px; border-radius: 20px; }
       .whatsapp-float { width: 54px; height: 54px; right: 16px; bottom: 16px; }
     }
+
+    .menu-toggle { display:none; background:var(--dorado); border:0; padding:10px 14px; font-size:1.8rem; font-weight:900; cursor:pointer; }
+
+@media (max-width:768px){
+  .navbar{flex-direction:row!important;align-items:center!important;flex-wrap:wrap;padding:12px 5%}
+  .brand{min-width:0;flex:1;gap:10px}
+  .brand-name{font-size:1.85rem;white-space:nowrap}
+  .menu-toggle{display:inline-flex}
+  .nav-links{display:none;width:100%;flex-direction:column;align-items:flex-start;background:#fff;padding:18px 0 8px;gap:14px}
+  .nav-links.open{display:flex}
+}
+
+    .filter-pill {
+  border: 1px solid rgba(158,108,32,0.25);
+  background: #fff;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: all .2s ease;
+}
+
+.filter-pill:hover {
+  background: var(--dorado);
+  color: #1f160b;
+}
+
+.filter-pill.active {
+  background: var(--dorado);
+  color: #1f160b;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.category-title {
+  scroll-margin-top: 120px;
+}
   </style>
 </head>
 <body>
@@ -459,7 +497,8 @@
       <img src="assets/images/logo.png" alt="Logo Maderas Los Puentes" />
       <span class="brand-name">Maderas los puentes</span>
     </a>
-    <nav class="nav-links" aria-label="Navegación principal">
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">☰</button>
+    <nav class="nav-links" id="nav-links" aria-label="Navegación principal">
       <a href="index.html">Inicio</a>
       <a class="active" href="productos.html">Productos</a>
       <a href="quienes-somos.html">Quiénes somos</a>
@@ -485,19 +524,19 @@
         <p>Organizamos los productos por familia para que el cliente encuentre rápido lo que necesita y contacte por WhatsApp. Los valores se manejan bajo cotización para proteger el margen y responder según volumen, disponibilidad y entrega.</p>
       </div>
 
-      <div class="filters">
-        <span class="filter-pill">Tablas y chapas</span>
-        <span class="filter-pill">Estructurales</span>
-        <span class="filter-pill">Rollizos y guadua</span>
-        <span class="filter-pill">Triplex y acabados</span>
-        <span class="filter-pill">Formaleta y camilla</span>
-      </div>
+<div class="filters">
+  <a class="filter-pill" href="#tablas-chapas">Tablas y chapas</a>
+  <a class="filter-pill" href="#estructurales">Estructurales</a>
+  <a class="filter-pill" href="#rollizos-guadua">Rollizos y guadua</a>
+  <a class="filter-pill" href="#triplex-acabados">Triplex y acabados</a>
+  <a class="filter-pill" href="#triplex-acabados">Formaleta y camilla</a>
+</div>
 
       <div class="notice">
         <strong>Compra inteligente:</strong> cotizamos según medida, cantidad, disponibilidad, corte y transporte. Pregunta por descuentos por volumen, entregas programadas y asesoría para obra.
       </div>
 
-      <div class="category-title"><h3>Tablas, chapas y forros</h3><span></span></div>
+      <div class="category-title" id="tablas-chapas"><h3>Tablas, chapas y forros</h3><span></span></div>
       <div class="grid">
         <article class="card">
           <div class="product-image" style="background-image: linear-gradient(135deg, rgba(95,65,18,0.55), rgba(214,151,54,0.12)), url('assets/images/productos/tabla-burra-30cm.jpg');"><span class="tag">Madera procesada · IVA 19%</span></div>
@@ -537,7 +576,7 @@
         </article>
       </div>
 
-      <div class="category-title"><h3>Estructurales y obra</h3><span></span></div>
+      <div class="category-title" id="estructurales"><h3>Estructurales y obra</h3><span></span></div>
       <div class="grid">
         <article class="card"><div class="product-image" style="background-image: linear-gradient(135deg, rgba(95,65,18,0.55), rgba(214,151,54,0.12)), url('assets/images/productos/cercos-8x8x3.jpg');"><span class="tag">Madera procesada · IVA 19%</span></div><div class="card-body"><h4>Cercos de 8x8x3 mts en ordinario</h4><div class="price quote-badge">Precio bajo cotización</div><p class="mini-copy">Cotiza por cantidad, corte y entrega.</p><ul class="specs"><li><strong>Medida:</strong> 8x8x3 mts</li><li><strong>Acabado:</strong> Ordinario</li><li><strong>Uso sugerido:</strong> Cercos, estructuras, soportes y obra exterior</li><li><strong>Tipo:</strong> Pieza estructural</li></ul><div class="actions"><a class="btn" href="https://wa.me/573108068408?text=Hola%2C%20quiero%20cotizar%20Cercos%20de%208x8x3%20mts%20en%20ordinario">Cotizar</a><a class="btn secondary" href="#cotizar">Ver especificaciones</a></div></div></article>
         <article class="card"><div class="product-image" style="background-image: linear-gradient(135deg, rgba(95,65,18,0.55), rgba(214,151,54,0.12)), url('assets/images/productos/repizas-8x4x3.jpg');"><span class="tag">Madera procesada · IVA 19%</span></div><div class="card-body"><h4>Repizas de 8x4x3 mts en ordinario</h4><div class="price quote-badge">Precio bajo cotización</div><p class="mini-copy">Cotiza por cantidad, corte y entrega.</p><ul class="specs"><li><strong>Medida:</strong> 8x4x3 mts</li><li><strong>Acabado:</strong> Ordinario</li><li><strong>Uso sugerido:</strong> Soportes, estantería rústica, obra y refuerzos</li><li><strong>Tipo:</strong> Repisa/listón estructural</li></ul><div class="actions"><a class="btn" href="https://wa.me/573108068408?text=Hola%2C%20quiero%20cotizar%20Repizas%20de%208x4x3%20mts%20en%20ordinario">Cotizar</a><a class="btn secondary" href="#cotizar">Ver especificaciones</a></div></div></article>
@@ -549,7 +588,7 @@
         <article class="card"><div class="product-image" style="background-image: linear-gradient(135deg, rgba(95,65,18,0.55), rgba(214,151,54,0.12)), url('assets/images/productos/durmientes-4m.jpg');"><span class="tag">Madera procesada · IVA 19%</span></div><div class="card-body"><h4>Durmientes de 4 mts en ordinario</h4><div class="price quote-badge">Precio bajo cotización</div><p class="mini-copy">Cotiza por cantidad, corte y entrega.</p><ul class="specs"><li><strong>Medida:</strong> 4 mts</li><li><strong>Acabado:</strong> Ordinario</li><li><strong>Uso sugerido:</strong> Apoyos largos, obra, bases y estructura temporal</li><li><strong>Tipo:</strong> Durmiente</li></ul><div class="actions"><a class="btn" href="https://wa.me/573108068408?text=Hola%2C%20quiero%20cotizar%20Durmientes%20de%204%20mts%20en%20ordinario">Cotizar</a><a class="btn secondary" href="#cotizar">Ver especificaciones</a></div></div></article>
       </div>
 
-      <div class="category-title"><h3>Rollizos, varas y guadua</h3><span></span></div>
+      <div class="category-title" id="rollizos-guadua"><h3>Rollizos, varas y guadua</h3><span></span></div>
       <div class="grid">
         <article class="card"><div class="product-image" style="background-image: linear-gradient(135deg, rgba(95,65,18,0.55), rgba(214,151,54,0.12)), url('assets/images/productos/varas-corredor-6m.jpg');"><span class="tag">Madera rolliza · IVA 5%</span></div><div class="card-body"><h4>Varas corredor de 6 mts</h4><div class="price quote-badge">Precio bajo cotización</div><p class="mini-copy">Cotiza por cantidad, corte y entrega.</p><ul class="specs"><li><strong>Medida:</strong> 6 mts</li><li><strong>Acabado:</strong> Rollizo / natural</li><li><strong>Uso sugerido:</strong> Corredores, cubiertas, cerramientos y obra rural</li><li><strong>Tipo:</strong> Vara rolliza</li></ul><div class="actions"><a class="btn" href="https://wa.me/573108068408?text=Hola%2C%20quiero%20cotizar%20Varas%20corredor%20de%206%20mts">Cotizar</a><a class="btn secondary" href="#cotizar">Ver especificaciones</a></div></div></article>
         <article class="card"><div class="product-image" style="background-image: linear-gradient(135deg, rgba(95,65,18,0.55), rgba(214,151,54,0.12)), url('assets/images/productos/vara-limaton-6m.jpg');"><span class="tag">Madera rolliza · IVA 5%</span></div><div class="card-body"><h4>Vara limatón de 6 mts</h4><div class="price quote-badge">Precio bajo cotización</div><p class="mini-copy">Cotiza por cantidad, corte y entrega.</p><ul class="specs"><li><strong>Medida:</strong> 6 mts</li><li><strong>Acabado:</strong> Rollizo / natural</li><li><strong>Uso sugerido:</strong> Cubiertas, estructuras rústicas y soporte principal</li><li><strong>Tipo:</strong> Vara rolliza</li></ul><div class="actions"><a class="btn" href="https://wa.me/573108068408?text=Hola%2C%20quiero%20cotizar%20Vara%20limat%C3%B3n%20de%206%20mts">Cotizar</a><a class="btn secondary" href="#cotizar">Ver especificaciones</a></div></div></article>
@@ -557,7 +596,7 @@
         <article class="card"><div class="product-image" style="background-image: linear-gradient(135deg, rgba(95,65,18,0.55), rgba(214,151,54,0.12)), url('assets/images/productos/paral-rollizo-3m.jpg');"><span class="tag">Madera rolliza · IVA 5%</span></div><div class="card-body"><h4>Paral de 3 mts (rollizos)</h4><div class="price quote-badge">Precio bajo cotización</div><p class="mini-copy">Cotiza por cantidad, corte y entrega.</p><ul class="specs"><li><strong>Medida:</strong> 3 mts</li><li><strong>Acabado:</strong> Rollizo / natural</li><li><strong>Uso sugerido:</strong> Puntales, soportes, cerramientos y obra temporal</li><li><strong>Tipo:</strong> Paral rollizo</li></ul><div class="actions"><a class="btn" href="https://wa.me/573108068408?text=Hola%2C%20quiero%20cotizar%20Paral%20de%203%20mts%20rollizos">Cotizar</a><a class="btn secondary" href="#cotizar">Ver especificaciones</a></div></div></article>
       </div>
 
-      <div class="category-title"><h3>Triplex, boceles, camilla y formaleta</h3><span></span></div>
+      <div class="category-title" id="triplex-acabados"><h3>Triplex, boceles, camilla y formaleta</h3><span></span></div>
       <div class="grid">
         <article class="card"><div class="product-image" style="background-image: linear-gradient(135deg, rgba(95,65,18,0.55), rgba(214,151,54,0.12)), url('assets/images/productos/triplex-122x244x4mm.jpg');"><span class="tag">Madera procesada · IVA 19%</span></div><div class="card-body"><h4>Lámina de triplex de 122x244x4mm</h4><div class="price quote-badge">Precio bajo cotización</div><p class="mini-copy">Cotiza por cantidad, corte y entrega.</p><ul class="specs"><li><strong>Medida:</strong> 122x244x4 mm</li><li><strong>Presentación:</strong> Lámina</li><li><strong>Uso sugerido:</strong> Muebles, divisiones, fondos, acabados y carpintería</li><li><strong>Tipo:</strong> Triplex</li></ul><div class="actions"><a class="btn" href="https://wa.me/573108068408?text=Hola%2C%20quiero%20cotizar%20L%C3%A1mina%20de%20triplex%20122x244x4mm">Cotizar</a><a class="btn secondary" href="#cotizar">Ver especificaciones</a></div></div></article>
         <article class="card"><div class="product-image" style="background-image: linear-gradient(135deg, rgba(95,65,18,0.55), rgba(214,151,54,0.12)), url('assets/images/productos/liston-camilla-8x18x070.jpg');"><span class="tag">Madera procesada · IVA 19%</span></div><div class="card-body"><h4>Listón para camilla de 8x1,8x0.70</h4><div class="price quote-badge">Precio bajo cotización</div><p class="mini-copy">Cotiza por cantidad, corte y entrega.</p><ul class="specs"><li><strong>Medida:</strong> 8x1,8x0.70</li><li><strong>Acabado:</strong> Ordinario</li><li><strong>Uso sugerido:</strong> Camillas, listonería, soportes pequeños y reparación</li><li><strong>Tipo:</strong> Listón</li></ul><div class="actions"><a class="btn" href="https://wa.me/573108068408?text=Hola%2C%20quiero%20cotizar%20List%C3%B3n%20para%20camilla%20de%208x1%2C8x0.70">Cotizar</a><a class="btn secondary" href="#cotizar">Ver especificaciones</a></div></div></article>
@@ -581,11 +620,11 @@
     <div class="footer-brand">Maderas los puentes</div>
     <div>Venta de madera fina y ordinaria para tus proyectos</div>
     <div>Cra 55 #127d-35 · Bogotá, Colombia · m2puentes@gmail.com</div>
-
-  </footer>
 <span>Con tecnología de TTECHFACT </span></p>
-  <a class="whatsapp-float" aria-label="Cotizar por WhatsApp" href="https://wa.me/573108068408?text=Hola%2C%20quiero%20cotizar%20madera">W</a>
+  </footer>
 
+  <a class="whatsapp-float" aria-label="Cotizar por WhatsApp" href="https://wa.me/573108068408?text=Hola%2C%20quiero%20cotizar%20madera">W</a>
+<!--
   <script>
     document.addEventListener('contextmenu', event => event.preventDefault());
     document.addEventListener('keydown', function(e) {
@@ -595,5 +634,21 @@
       }
     });
   </script>
+  -->
+
+  <script>
+const btn=document.getElementById('menu-toggle');
+const nav=document.getElementById('nav-links');
+btn?.addEventListener('click',()=>nav.classList.toggle('open'));
+</script>
+<script>
+document.querySelectorAll('.filter-pill').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-pill').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  });
+});
+</script>
+
 </body>
 </html>
