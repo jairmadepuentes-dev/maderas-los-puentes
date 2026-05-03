@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad | Maderas Los Puentes</title>
+  <meta name="description" content="Política de privacidad y tratamiento de datos personales de Maderas Los Puentes para formularios, WhatsApp, navegación web y Google Analytics." />
+  <meta name="author" content="Maderas Los Puentes" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="assets/images/logo.png" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Yellowtail&display=swap');
+
+    :root {
+      --madera: #9e6c20;
+      --madera-oscura: #5f4112;
+      --dorado: #d69736;
+      --crema: #fbf7ef;
+      --arena: #efe2cd;
+      --verde: #556b2f;
+      --texto: #1b1b1b;
+      --gris: #66615a;
+      --blanco: #ffffff;
+      --sombra: 0 18px 45px rgba(53, 32, 8, 0.12);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Lora', Georgia, serif;
+      color: var(--texto);
+      background: var(--crema);
+      line-height: 1.7;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .topbar {
+      background: #1f160b;
+      color: #fff;
+      font-size: 0.9rem;
+      padding: 8px 5%;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .navbar {
+      background: rgba(255, 255, 255, 0.96);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.07);
+      padding: 16px 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-width: 230px;
+    }
+
+    .brand img {
+      width: 78px;
+      height: 78px;
+      object-fit: contain;
+    }
+
+    .brand-name {
+      font-family: 'Yellowtail', cursive;
+      color: var(--madera);
+      font-size: clamp(1.75rem, 3vw, 2.5rem);
+      line-height: 1;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 22px;
+      flex-wrap: wrap;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+
+    .nav-links a {
+      color: var(--madera-oscura);
+      border-bottom: 2px solid transparent;
+      padding-bottom: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .nav-links a:hover, .nav-links .active {
+      color: var(--madera);
+      border-bottom-color: var(--dorado);
+    }
+
+    .hero {
+      min-height: 360px;
+      padding: 76px 5% 64px;
+      background:
+        linear-gradient(115deg, rgba(24, 17, 8, 0.9), rgba(72, 42, 12, 0.62)),
+        url('assets/images/hero-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: 'Privacidad';
+      position: absolute;
+      right: -80px;
+      bottom: -30px;
+      font-family: 'Yellowtail', cursive;
+      font-size: clamp(5rem, 14vw, 13rem);
+      color: rgba(214,151,54,0.13);
+      transform: rotate(-10deg);
+      pointer-events: none;
+    }
+
+    .hero-content {
+      max-width: 900px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .eyebrow {
+      color: var(--dorado);
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      font-weight: 700;
+      font-size: 0.83rem;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.4rem, 5vw, 4.5rem);
+      line-height: 1.05;
+      text-shadow: 0 2px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: 20px auto 0;
+      font-size: clamp(1rem, 2vw, 1.18rem);
+    }
+
+    .section {
+      padding: 70px 5%;
+    }
+
+    .content {
+      max-width: 1050px;
+      margin: 0 auto;
+      background: var(--blanco);
+      border: 1px solid rgba(158,108,32,0.15);
+      border-radius: 26px;
+      box-shadow: var(--sombra);
+      padding: clamp(24px, 5vw, 52px);
+    }
+
+    .notice {
+      background: #fff7e8;
+      border-left: 5px solid var(--dorado);
+      border-radius: 16px;
+      padding: 18px 20px;
+      color: var(--gris);
+      margin-bottom: 32px;
+    }
+
+    h2 {
+      color: var(--madera-oscura);
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      margin: 38px 0 10px;
+      line-height: 1.2;
+    }
+
+    h3 {
+      color: var(--madera-oscura);
+      margin: 24px 0 8px;
+    }
+
+    p, li { color: var(--gris); }
+
+    strong { color: var(--texto); }
+
+    ul { padding-left: 1.3rem; }
+
+    .data-card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin: 24px 0;
+    }
+
+    .data-card {
+      background: var(--crema);
+      border: 1px solid rgba(158,108,32,0.16);
+      border-radius: 18px;
+      padding: 18px;
+    }
+
+    .data-card span {
+      display: block;
+      font-weight: 800;
+      color: var(--madera-oscura);
+      margin-bottom: 6px;
+    }
+
+    .btn-row {
+      margin-top: 38px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 12px 18px;
+      border-radius: 0;
+      border-bottom: 4px solid rgba(95,65,18,0.65);
+      background: var(--dorado);
+      color: #111;
+      font-weight: 800;
+      font-size: 0.9rem;
+      transition: all 0.2s ease;
+      text-align: center;
+    }
+
+    .btn:hover { background: #f9b040; }
+
+    .btn.secondary {
+      background: #f4eadb;
+      color: var(--madera-oscura);
+      border-bottom-color: rgba(158,108,32,0.28);
+    }
+
+    footer {
+      padding: 42px 5%;
+      background: #161616;
+      color: #dbdbdb;
+      text-align: center;
+    }
+
+    footer a { color: var(--dorado); }
+
+    .footer-brand {
+      font-family: 'Yellowtail', cursive;
+      color: var(--dorado);
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #25D366;
+      color: #fff;
+      display: grid;
+      place-items: center;
+      font-size: 1.6rem;
+      font-weight: 700;
+      box-shadow: 0 16px 40px rgba(0,0,0,0.25);
+      z-index: 80;
+    }
+
+    @media (max-width: 980px) {
+      .navbar { align-items: flex-start; flex-direction: column; }
+      .nav-links { justify-content: flex-start; }
+      .data-card-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 620px) {
+      .topbar { font-size: 0.78rem; }
+      .brand img { width: 62px; height: 62px; }
+      .section { padding: 48px 5%; }
+      .whatsapp-float { width: 54px; height: 54px; right: 16px; bottom: 16px; }
+    }
+  </style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPG8V5E4BZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPG8V5E4BZ');
+</script>
+
+</head>
+<body>
+  <div class="topbar">
+    <span>Cra 55 #127d-35 · Bogotá, Colombia</span>
+    <span>WhatsApp: 310 806 8408 · 311 878 6081 · Tel: 601 926 1509</span>
+  </div>
+
+  <header class="navbar">
+    <a class="brand" href="index.html" aria-label="Inicio Maderas Los Puentes">
+      <img src="assets/images/logo.png" alt="Logo Maderas Los Puentes" />
+      <span class="brand-name">Maderas los puentes</span>
+    </a>
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="quienes-somos.html">Quiénes somos</a>
+      <a href="galeria.html">Galería</a>
+      <a href="contacto.html">Contacto</a>
+      <a class="active" href="politica-privacidad.html">Privacidad</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="eyebrow">Protección de datos personales</div>
+        <h1>Política de privacidad</h1>
+        <p>En Maderas Los Puentes tratamos la información de nuestros clientes con respeto, seguridad y finalidad comercial clara: atender solicitudes, cotizaciones y mejorar la experiencia digital.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <article class="content">
+        <div class="notice">
+          <strong>Última actualización:</strong> mayo de 2026. Esta política aplica al sitio web de Maderas Los Puentes, sus formularios, enlaces de WhatsApp, llamadas, correos y herramientas de medición digital como Google Analytics.
+        </div>
+
+        <h2>1. Responsable del tratamiento</h2>
+        <p><strong>Maderas Los Puentes</strong>, con atención comercial en Bogotá, Colombia, es responsable del tratamiento de los datos personales recibidos a través de este sitio web, WhatsApp, correo electrónico, llamadas telefónicas y formularios de contacto.</p>
+        <ul>
+          <li><strong>Dirección:</strong> Cra 55 #127d-35, Bogotá, Colombia.</li>
+          <li><strong>Teléfonos:</strong> 310 806 8408 · 311 878 6081 · 601 926 1509.</li>
+          <li><strong>Correo:</strong> m2puentes@gmail.com.</li>
+        </ul>
+
+        <h2>2. Datos que podemos recolectar</h2>
+        <p>Podemos recolectar datos únicamente cuando el usuario los entrega voluntariamente o cuando navega por el sitio web.</p>
+        <div class="data-card-grid">
+          <div class="data-card">
+            <span>Datos de contacto</span>
+            Nombre, teléfono, correo electrónico y mensaje enviado por formulario o WhatsApp.
+          </div>
+          <div class="data-card">
+            <span>Datos comerciales</span>
+            Producto solicitado, medidas, cantidades, ubicación de entrega y detalles del proyecto.
+          </div>
+          <div class="data-card">
+            <span>Datos de navegación</span>
+            Páginas visitadas, clics, origen del tráfico, dispositivo, navegador y eventos de interacción.
+          </div>
+        </div>
+
+        <h2>3. Finalidades del tratamiento</h2>
+        <p>Los datos personales podrán ser tratados para:</p>
+        <ul>
+          <li>Responder solicitudes de información, cotizaciones y asesoría comercial.</li>
+          <li>Coordinar pedidos, disponibilidad, cortes, transporte y entregas.</li>
+          <li>Contactar al usuario por WhatsApp, teléfono o correo cuando haya solicitado información.</li>
+          <li>Mejorar el sitio web, el catálogo de productos y la experiencia del usuario.</li>
+          <li>Medir visitas, clics y desempeño de campañas digitales.</li>
+          <li>Cumplir obligaciones legales, contables, comerciales y administrativas aplicables.</li>
+        </ul>
+
+        <h2>4. Uso de Google Analytics y cookies</h2>
+        <p>Este sitio puede usar <strong>Google Analytics 4</strong> para conocer de forma estadística cómo interactúan los visitantes con la página. Esta herramienta puede usar cookies o tecnologías similares para medir visitas, páginas consultadas, clics y origen del tráfico.</p>
+        <p>Google Analytics ayuda a generar estadísticas de uso sin identificar personalmente a cada visitante. Google indica que la cookie principal <strong>_ga</strong> permite distinguir un visitante de otro y puede durar hasta 2 años. También exige informar a los usuarios sobre el uso de cookies y la forma en que Google procesa la información.</p>
+        <p>No enviamos intencionalmente a Google Analytics datos personales como nombres, números de teléfono, correos electrónicos o mensajes privados.</p>
+
+        <h2>5. Base legal y autorización</h2>
+        <p>El tratamiento se realiza con base en la autorización entregada por el titular al enviar formularios, escribir por WhatsApp, llamar, enviar correo o navegar en el sitio, y conforme a la normativa colombiana aplicable sobre protección de datos personales.</p>
+
+        <h2>6. Derechos de los titulares</h2>
+        <p>De acuerdo con la legislación colombiana de protección de datos personales, los titulares pueden:</p>
+        <ul>
+          <li>Conocer, actualizar y rectificar sus datos personales.</li>
+          <li>Solicitar prueba de la autorización otorgada.</li>
+          <li>Ser informados sobre el uso dado a sus datos.</li>
+          <li>Presentar consultas o reclamos relacionados con el tratamiento de sus datos.</li>
+          <li>Solicitar la supresión de sus datos cuando sea procedente.</li>
+          <li>Revocar la autorización cuando no exista un deber legal o contractual que obligue a conservar la información.</li>
+        </ul>
+
+        <h2>7. Procedimiento para consultas, reclamos o eliminación de datos</h2>
+        <p>El titular puede enviar una solicitud al correo <strong>m2puentes@gmail.com</strong> indicando:</p>
+        <ul>
+          <li>Nombre completo.</li>
+          <li>Medio de contacto.</li>
+          <li>Descripción clara de la solicitud.</li>
+          <li>Soporte de identidad si es necesario para proteger la información.</li>
+        </ul>
+        <p>Responderemos las solicitudes dentro de los tiempos razonables y legalmente aplicables.</p>
+
+        <h2>8. Seguridad de la información</h2>
+        <p>Aplicamos medidas razonables para proteger la información contra acceso no autorizado, pérdida, uso indebido o divulgación no autorizada. Sin embargo, ningún sistema digital puede garantizar seguridad absoluta.</p>
+
+        <h2>9. Conservación de la información</h2>
+        <p>Los datos se conservarán durante el tiempo necesario para atender la solicitud, mantener la relación comercial, cumplir obligaciones legales o resolver consultas posteriores. Cuando ya no sean necesarios, podrán ser eliminados o anonimizados.</p>
+
+        <h2>10. Enlaces externos</h2>
+        <p>El sitio puede contener enlaces a WhatsApp, Google Maps, Google Analytics u otros servicios de terceros. Maderas Los Puentes no controla las políticas de privacidad de esos terceros, por lo que recomendamos revisarlas directamente.</p>
+
+        <h2>11. Menores de edad</h2>
+        <p>Este sitio está dirigido a personas interesadas en productos y servicios de madera para construcción, carpintería y acabados. No buscamos recolectar datos de niños, niñas o adolescentes.</p>
+
+        <h2>12. Cambios en esta política</h2>
+        <p>Podemos actualizar esta Política de Privacidad para reflejar cambios legales, técnicos o comerciales. La versión vigente será la publicada en esta página.</p>
+
+        <h2>13. Contacto para privacidad</h2>
+        <p>Para ejercer derechos sobre datos personales o consultar esta política, escribe a:</p>
+        <ul>
+          <li><strong>Correo:</strong> m2puentes@gmail.com</li>
+          <li><strong>WhatsApp:</strong> 310 806 8408</li>
+          <li><strong>Dirección:</strong> Cra 55 #127d-35, Bogotá, Colombia</li>
+        </ul>
+
+        <div class="btn-row">
+          <a class="btn" href="contacto.html">Contactar a Maderas Los Puentes</a>
+          <a class="btn secondary" href="index.html">Volver al inicio</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">Maderas los puentes</div>
+    <div>Venta de madera fina y ordinaria para tus proyectos</div>
+    <div>Cra 55 #127d-35 · Bogotá, Colombia · m2puentes@gmail.com</div>
+    <div style="margin-top:10px;"><a href="politica-privacidad.html">Política de privacidad</a></div>
+  </footer>
+
+  <a class="whatsapp-float" aria-label="Contactar por WhatsApp" href="https://wa.me/573108068408?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Maderas%20Los%20Puentes">W</a>
+</body>
+</html>
