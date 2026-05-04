@@ -38,7 +38,15 @@
     <a href="quienes-somos.html">Quiénes somos</a>
     <a href="galeria.html">Galería</a>
     <a class="active" href="contacto.html">Contacto</a>
-    <a href="https://wa.me/573108068408?text=Hola%2C%20quiero%20cotizar%20madera%20para%20mi%20proyecto">WhatsApp</a>
+<a href="https://wa.me/573108068408?text=Hola%2C%20quiero%20cotizar%20madera%20para%20mi%20proyecto"
+   onclick="gtag('event', 'click_whatsapp', {
+     event_category: 'whatsapp',
+     event_label: 'whatsapp_header'
+   });">
+   WhatsApp
+</a>
+    
+
   </nav>
 </header>
 <main>
@@ -53,7 +61,14 @@
       <p><strong>Teléfono:</strong><br>601 926 1509</p>
       <p><strong>Correo:</strong><br><a href="mailto:m2puentes@gmail.com">m2puentes@gmail.com</a></p>
       <p><strong>Horario sugerido:</strong><br>Lunes a sábado · Atención según disponibilidad de bodega y despacho.</p>
-      <a class="btn whatsapp" href="https://wa.me/573108068408?text=Hola%2C%20quiero%20cotizar%20madera%20para%20mi%20proyecto">Hablar por WhatsApp</a>
+<a class="btn whatsapp"
+   href="https://wa.me/573108068408?text=Hola%2C%20quiero%20cotizar%20madera"
+   onclick="gtag('event', 'click_whatsapp', {
+     event_category: 'contacto',
+     event_label: 'whatsapp_contacto'
+   });">
+   Hablar por WhatsApp
+</a>
     </div></article>
     <article class="form"><h3>Solicitar cotización</h3><form action="submit_contact.php" method="POST">
       <label for="nombre">Nombre</label><input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required>
@@ -70,14 +85,32 @@
   <iframe class="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Cra%2055%20%23127d-35%20Bogota%20Colombia&output=embed"></iframe>
   <div class="cta"><div><h3>¿No sabes qué madera necesitas?</h3><p>Envíanos una foto, plano o referencia. Te ayudamos a aterrizar medidas, cantidad y uso recomendado.</p></div><a class="btn" href="productos.html">Ver catálogo</a></div>
 </section>
-<span>Con tecnología de TTECHFACT </span></p>
 
 </main>
 <footer>
   <div class="footer-brand">Maderas los puentes</div>
   <div>Venta de madera fina y ordinaria para construcción, carpintería y acabados.</div>
   <div>Cra 55 #127d-35 · Bogotá, Colombia · m2puentes@gmail.com</div>
+
+<p style="font-size:12px; opacity:0.7;">
+  Sitio desarrollado por 
+  <a href="https://thetechnologyfactory.duckdns.org" 
+     target="_blank"
+     style="color:#d69736; text-decoration:none; font-weight:bold;">
+    TTECHFACT
+  </a>
+  · Automatización, IA y desarrollo web
+</p>
 </footer>
-<a class="whatsapp-float" aria-label="Cotizar por WhatsApp" href="https://wa.me/573108068408?text=Hola%2C%20quiero%20cotizar%20madera">W</a>
+<a class="whatsapp-float"
+   href="https://wa.me/573108068408?text=Hola%2C%20quiero%20cotizar%20madera"
+   onclick="gtag('event', 'click_whatsapp', {
+     event_category: 'whatsapp',
+     event_label: 'whatsapp_float'
+   });">
+   W
+</a>
+
+
 </body>
 </html>
