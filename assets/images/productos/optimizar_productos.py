@@ -32,8 +32,8 @@ PRODUCTOS = [
     "formaleta-70x140.jpg",
 ]
 
-INPUT_DIR = Path("assets/images/productos")
-OUTPUT_DIR = Path("assets/images/productos/optimizadas")
+INPUT_DIR = Path(".")
+OUTPUT_DIR = Path("optimizadas")
 SIZE = (1200, 1200)
 QUALITY = 82
 
