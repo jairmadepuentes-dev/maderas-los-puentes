@@ -1,0 +1,21 @@
+{
+  "scope": "./",
+  "start_url": "./",
+  "display": "standalone",
+  "icons": [
+    {
+      "sizes": "192x192",
+      "type": "image/png",
+      "src": "assets/images/logo.png"
+    },
+    {
+      "sizes": "512x512",
+      "type": "image/png",
+      "src": "assets/images/logo.png"
+    }
+  ],
+  "name": "Maderas Los Puentes",
+  "short_name": "Maderas Los Puentes",
+  "theme_color": "#fcd8a2",
+  "background_color": "#fcd8a2"
+}
